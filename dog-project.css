@@ -48,7 +48,8 @@ h1 {
 h1 span {
   display: block;
   font-size: 10vw;
-  letter-spacing: -0.6rem;
+  letter-spacing: -0.1rem;
+   
 }
 
 main {
@@ -74,18 +75,19 @@ main p {
 .card {
   display: grid;
   grid-template-columns: 300px;
-  grid-template-rows: 210px 250px 20px;
+  grid-template-rows: 210px 210px 80px;
   grid-template-areas: "image" "text" "stats";
   border-radius: 18px;
   background: #1d1d1d;
   color:white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   font-family: roboto;
-  text-align: justify;
+  text-align:justify;
   cursor: pointer;
-  margin:30px;
+  margin: 100px;
   transform-style: preserve-3d;
   transform: perspective(1000px);
+  width: 340px;
 }
 .rgb::after {
   content:"";
@@ -118,8 +120,11 @@ main p {
   border-radius: 18px;
 }
 .card-image {
-  grid-area: image;
-  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img1.jpg");
+  width: 334px;
+    height: 300px;
+    position: relative;
+    right:34px;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("images/image1.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
