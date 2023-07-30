@@ -4,14 +4,7 @@
   width: 100vw;
   height: 100vh;
 }
-.video-header div:last-child{
-    position: relative;
-    top: 120px;
-    color: ghostwhite;
-    letter-spacing: 2px;
-    color:skyblue;
-    text-decoration:overline
-}
+
 .video-header, .video-header video, .video-header .viewport-header {
   width: 100vw;
   height: 100vh;
@@ -71,6 +64,9 @@ main {
   position: relative;
   padding: 1rem;
   margin-top: 100vh;
+    margin: 0,auto;
+  width: auto;
+  position: absolute;    
 }
 main::before {
   content: "";
@@ -90,7 +86,7 @@ main p {
   display: grid;
   grid-template-columns: 300px;
   grid-template-rows: 210px 210px 80px;
-  grid-template-areas: "image" "text" "stats";
+  grid-template-areas: "image" "text";
   border-radius: 18px;
   background: #1d1d1d;
   color:white;
@@ -98,7 +94,7 @@ main p {
   font-family: roboto;
   text-align:justify;
   cursor: pointer;
-  margin: 100px;
+  margin: 140px;
   transform-style: preserve-3d;
   transform: perspective(1000px);
   width: 340px;
@@ -175,7 +171,7 @@ main p {
 
 /*card2*/
 .card-image.card2 {
-  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img2.jpg");
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("images/cardimage2.jpg");
   background-size: cover;
 }
 .card-text.card2 .date {
@@ -185,8 +181,8 @@ main p {
 
 /*card3*/
 .card-image.card3 {
-  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img3.jpg");
-  background-size: cover;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("images/Cardimage3.jpg");
+  background-size:cover;
 }
 .card-text.card3 .date {
   color: rgb(0, 189, 63);
@@ -199,6 +195,22 @@ main p {
 
 body {
   margin: 0;
+}
+
+#h1{
+    color:black;
+    font-weight: 400;
+    font-weight: bold;
+    position: relative;
+    bottom: 320px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    
+    
+    
 }
 
 
