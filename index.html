@@ -4,21 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Nav bar</title>
+        <title>Paw-Pixs</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="dog-project.css">
-    <style>
-    
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="video-header">
       <video src="images/dog-project-video.mp4" autoplay loop playsinline muted></video>
       <div class="viewport-header">
         <h1>
-          Discover <span>Together</span>
-        </h1>
+          Discover <span>Together</span><span>With Paw Pixs</span>
+        </h1>  
       </div>
+        <div class="viewport-header">
+        <button>Learn More</button>
+        </div>
+<!--
+        <div class="viewport-header">
+            <h2>Save and Share your Adventures today</h2>
+        </div>
+-->
     </header>
 
     <main>
@@ -26,9 +34,9 @@
       <div class="card" data-tilt>
         <div class="card-image" ></div>
         <div class="card-text">
-          <span class="date">2 days ago</span>
+          <span class="date">6h ago</span>
           <h2>Post One</h2>
-          <p>Sample Text Here...... This will test if the spacing and alignment is correct. Any adjustments will be added. </p>
+          <p>LONG week at work, theres nothing like the feeling of hiking with my dog! <span>#WeekEND#FinallyFriday</span></p>
         </div>
       </div>
       <div class="card rgb" data-tilt>
@@ -53,27 +61,26 @@
       
     
 <!--    Our nav bar will be placed fixed to top and in dark theme format as default-->
- <nav class="navbar  navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark" >
+ <nav class="navbar  navbar-expand-lg bg-body-tertiary fixed-top  " data-bs-theme="white">
    <div class="container-fluid">
+    <div class="justify-content-left">   
     <a class="navbar-brand" href="#">
-      <img src="images/bootstrap-logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-      Bootstrap
+      <img src="images/paws.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top ">
     </a>
+       </div>    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify-content-end fs-5 bg-text-white" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mb-2 mb-lg-0" >
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
+          <button type="button" class="btn btn-outline-white fs-5"><b>Join Today</b></button>    
+      </ul>
+       </div>
+    <div class="collapse navbar-collapse justify-content-end fs-5" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mb-2 mb-lg-0" >
         <li class="nav-item">
-          <a class="nav-link" href="#">Support</a>
-        </li>
-          
-          
-  
-  
+          <button type="button" class="btn btn-outline-dark">Log In</button>
       </ul>
        </div>
      </div>
