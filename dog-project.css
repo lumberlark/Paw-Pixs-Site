@@ -42,7 +42,8 @@ h1 {
   font-size: 3vw;
   text-align: center;
   position: relative;
-  bottom: 120px;    
+  bottom: 120px; 
+    margin:0,auto;
 }
 h1 span {
   display: block;
@@ -60,13 +61,14 @@ body{
 }
 
 main {
-  background: white;
+ background: linear-gradient(white,coral);
   position: relative;
   padding: 1rem;
   margin-top: 100vh;
     margin: 0,auto;
   width: auto;
-  position: absolute;    
+  position: absolute; 
+    color: black;
 }
 main::before {
   content: "";
@@ -94,7 +96,7 @@ main p {
   font-family: roboto;
   text-align:justify;
   cursor: pointer;
-  margin: 140px;
+  margin: 150px;
   transform-style: preserve-3d;
   transform: perspective(1000px);
   width: 340px;
@@ -142,11 +144,11 @@ main p {
 
 .card-text {
   grid-area: text;
-  margin: 20px;
+  margin: 30px;
   transform: translateZ(20px);
   margin-top: 106px;
-    position: relative;
-    right: 30px;
+  position: relative;
+  right: 30px;
 
 }
 .card-text .date {
@@ -171,8 +173,8 @@ main p {
 
 /*card2*/
 .card-image.card2 {
-  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("images/cardimage2.jpg");
-  background-size: cover;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("images/SusQandpups.png");
+  background-size: auto;
 }
 .card-text.card2 .date {
   color: rgb(255, 77, 7);
@@ -181,8 +183,8 @@ main p {
 
 /*card3*/
 .card-image.card3 {
-  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("images/Cardimage3.jpg");
-  background-size:cover;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("images/Kristin77.png");
+  background-size:auto;
 }
 .card-text.card3 .date {
   color: rgb(0, 189, 63);
@@ -198,20 +200,165 @@ body {
 }
 
 #h1{
-    color:black;
+    
+    background-size:auto;
     font-weight: 400;
     font-weight: bold;
     position: relative;
     bottom: 320px;
-    letter-spacing: 5px;
-    font-size: 30px;
-    width: 300px;
+    width: 258px;
+    height: 57px;
     margin: auto;
     border-radius: 10px;
+    animation: fadeIn 7s;
+}
+
+h3{
+   color: black;
+    text-align: center;
+    position: relative;
+    margin: 0,auto;
+    bottom: 70px;
+    width: auto;
+    background-repeat:no-repeat;
+}
+
+h5{
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    animation: fadeIn 16s;
+}
+
+h5 span:first-child{
+    color: seagreen;
+    font-weight:700;
+    font-size: 35px;
     
+}
+
+h5 span:nth-child(2){
+    color: coral;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+h5 span:nth-child(3){
+    color: coral;
+    font-weight: 700;
+    font-size: 35px;
     
+}
+
+h5 span:last-child{
+    text-decoration: underline;
+    
+}
+
+h6{
+    text-align: center;
+    font-size: 27px;
+    
+}
+
+#bottomtext{
+    text-align: center;
+    margin: auto;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: absolute;
+    bottom: 400px;
+    left: 130px;
+    border: 1px solid coral;
+    width: 86%;
+    border-radius: 10px;
+    background: linear-gradient(coral,lightcoral);
+    box-shadow: 4px 4px silver;
+    animation: fadeIn 5s;
     
 }
 
 
+/*Footer CSS below:*/
 
+#footer .twitter {
+  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#footer .linkedin {
+  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+  background-repeat: no-repeat;
+  background-position: -78px 0;
+}
+#footer .facebook {
+  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+  background-repeat: no-repeat;
+  background-position: -233px 0;
+}
+#footer .skype {
+  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+  background-repeat: no-repeat;
+  background-position: -156px 0;
+}
+#footer .flickr {
+  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+  background-repeat: no-repeat;
+  background-position: -310px 0;
+}
+
+#foot{
+    top: 40px;
+    position: relative;
+    
+}
+
+#footer a {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+}
+#footer a:hover {
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+}
+#footer .twitter:hover {
+  background-position: 0 -56px;
+}
+#footer .facebook:hover {
+  background-position: -233px -56px;
+}
+#footer .skype:hover {
+  background-position: -156px -56px;
+}
+#footer .linkedin:hover {
+  background-position: -78px -56px;
+}
+#footer .flickr:hover {
+  background-position: -310px -56px;
+}
+.bg-dark-1{
+  background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #e97142 0%, #784BA0 50%, #2B86C5 100%);
+ 
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#section1{
+    background-color: black;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 30px;
+}
+
+#paws{
+    height: 0px;
+    position: relative;
+    bottom: 71px;
+}
